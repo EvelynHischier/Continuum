@@ -9,12 +9,18 @@
 	<description>Continuum</description>
 
 	<scm>
-		<connection>scm:git:https://github.com/EvelynHischier/Continuum</connection>
+		<connection>scm:git:https://github.com/EvelynHischier/Continuum.git</connection>
 	</scm>
-
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.continuum</groupId>
+			<artifactId>continuum-maven-plugin</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
-		<plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-scm-plugin</artifactId>
 				<version>1.0</version>
